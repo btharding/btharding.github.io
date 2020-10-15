@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="./style.css" type = "text/css" rel="stylesheet"/>
+    <link rel ="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src = "script.js"></script>
+    <script src = "data.js"></script>
+    <title>William Harding</title>
+  </head>
+  <body>
+    <div id = "container">
+      <div id = "splash" class = "flex center-h center-w full-width full-height">
+        <img src = "./img/Signature.svg" width = "50%">
+        <h1>William Harding</h1>
+        <ul id = "contact" class = "horizontal">
+          <li><a href = "https://github.com/btharding" target = "blank">Github</a></li>
+          <li><a href = "https://twitter.com/BillyHardingDev" target = "blank">Twitter</a></li>
+        </ul>
+        <ul id = "cv" class = "horizontal">
+          <li><a href = "./William Harding CV.pdf" target = "blank">My CV</a></li>
+        <ul>
+      </div>
+      <div id = "portfolio" class = "full-width">
+        <h1>Portfolio</h1>
+        <div id = "projects"></div>
+      </div>
+      <div id = "work-experience" class = "full-width">
+        <h1>Work Experience</h1>
+        <div id = "experiences"></div>
+      </div>
+
+      <div id = "education" class = "full-width">
+        <h1>Education</h1>
+        <div id = "educations">
+          <div class = "experience">
+            <h2>GCSE's and A-Levels</h2>
+            <h3>Marling School</h3>
+            <h4>Sept 2012 - May 2019</h4>
+            <ul>
+              <li>A-Levels - A,A,A,C in Computer Science, Maths, Physics, Chemistry</li>
+              <li>GCSE's - Achieved 13 GCSE's including Level 8 in Maths, Level 7 in Englsih, and A* in Computer Science</li>
+            </ul>
+          </div>
+          <div class = "experience">
+            <h2>BSc Computer Science</h2>
+            <h3>University of Birmingham</h3>
+            <h4>Sept 2019 - Present</h4>
+            <ul>
+              <li>First year - Studied Java Development, Data Structures and Algorithms, Fundamentals of Artificial Intelligence, and Maths and Logic. 80% Grade Average</li>
+              <li>Currently studying Software Engineering and Professional Practice, Functional Programming in Haskell, and Systems Programming in C</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id = "skills" class = "full-width">
+        <h2>Skills</h2>
+        <div id = "mySkills"></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.getElementById('projects').innerHTML = createProjects(projects);
+    document.getElementById('experiences').innerHTML = createExperiences(experiences);
+    document.getElementById('mySkills').innerHTML = createSkills(skills);
+  </script>
+
+</html>
